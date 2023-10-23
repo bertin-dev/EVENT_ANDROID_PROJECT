@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/app_bar_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vp_horizontal_ntb"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_gravity="bottom"
+        android:visibility="visible"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.gauravk.bubblenavigation.BubbleNavigationConstraintView
+            android:id="@+id/top_navigation_constraint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/jaune"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            app:bnc_mode="packed"
+            android:layout_gravity="center_horizontal|center_vertical"
+            app:hideOnScroll="true">
+
+            <com.gauravk.bubblenavigation.BubbleToggleView
+                android:id="@+id/l_item_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:bt_icon="@drawable/ic_baseline_add_circle_outline_64"
+                app:bt_iconHeight="25dp"
+                app:bt_iconWidth="25dp"
+                app:bt_shape="@android:color/transparent"
+                app:bt_showShapeAlways="@android:color/transparent"
+                app:bt_active="true"
+                app:bt_colorInactive="@color/white"
+                app:bt_colorActive="@color/white"
+                android:gravity="center"
+                app:bt_title=""
+                />
+
+            <com.gauravk.bubblenavigation.BubbleToggleView
+                android:id="@+id/l_item_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:bt_iconHeight="25dp"
+                app:bt_iconWidth="25dp"
+                app:bt_colorActive="@color/white"
+                app:bt_shape="@android:color/transparent"
+                app:bt_showShapeAlways="@android:color/transparent"
+                app:bt_icon="@drawable/ic_baseline_search_64"
+
+                app:bt_active="true"
+                app:bt_colorInactive="@color/white"
+                app:bt_title=""
+                />
+
+            <com.gauravk.bubblenavigation.BubbleToggleView
+                android:id="@+id/l_item_point_marchands"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:bt_iconHeight="25dp"
+                app:bt_iconWidth="25dp"
+                app:bt_colorActive="@color/white"
+                app:bt_shape="@android:color/transparent"
+                app:bt_showShapeAlways="@android:color/transparent"
+                app:bt_icon="@drawable/ic_outline_redo_64"
+
+                app:bt_active="true"
+                app:bt_colorInactive="@color/white"
+                app:bt_title=""
+                />
+
+        </com.gauravk.bubblenavigation.BubbleNavigationConstraintView>
+
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/bleu"
+            android:layout_height="10dp"/>
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

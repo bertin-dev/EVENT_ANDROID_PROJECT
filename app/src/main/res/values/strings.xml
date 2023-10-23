@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">EVENT</string>
+    <string name="welcome">Welcome to Event Planer</string>
+    <string name="username">Username</string>
+    <string name="mdp">Password</string>
+    <string name="login">SIGN IN</string>
+    <string name="or">OR</string>
+    <string name="login_with">login with</string>
+    <string name="create">CREATE</string>
+    <string name="account">ACCOUNT</string>
+    <string name="your_nick_name">Your nickname</string>
+    <string name="your_email">Your e-mail</string>
+    <string name="your_password">Your password</string>
+    <string name="your_password_confirm">Confirm password</string>
+    <string name="preferences">preferences</string>
+    <string name="edit">edit</string>
+    <string name="event1">Event 1</string>
+    <string name="caladrier">Calendrier des événements</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="your">YOUR</string>
+    <string name="profile">PROFILE</string>
+    <string name="billeterie">Billeterie</string>
+    <string name="protocole">Protocole</string>
+    <string name="restauration">Restauration</string>
+    <string name="securite">Sécurité</string>
+    <string name="autre_service">Autres services</string>
+</resources>

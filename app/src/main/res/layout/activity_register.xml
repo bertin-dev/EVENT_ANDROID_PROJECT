@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:id="@+id/register"
+    android:background="@color/bleu"
+    tools:context=".ui.Register">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="50dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_account_circle_128" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/authWindows"
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal|center_vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textAllCaps="true"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/underline"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/create"
+                        android:textAlignment="center"
+                        android:textColor="@color/gris_clair"
+                        android:textSize="25sp"
+                        android:paddingEnd="5dp"
+                        android:paddingStart="@null"
+                        android:gravity="center_horizontal"
+                        android:paddingLeft="@null"
+                        android:paddingBottom="20dp"
+                        android:paddingRight="5dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/account"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:textSize="25sp"
+                        android:paddingBottom="20dp"
+                        android:gravity="center_horizontal" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:focusable="true"
+                android:paddingLeft="65dp"
+                android:paddingRight="65dp"
+                android:layout_marginTop="20dp"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/til_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/your_nick_name"
+                    android:textColorHint="@color/gris_clair"
+                    app:errorEnabled="true">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tie_name"
+                        android:textColor="@color/gris_clair"
+                        android:layout_gravity="center"
+                        android:maxLines="1"
+                        android:textSize="20sp"
+                        android:padding="10dp"
+                        android:gravity="center_vertical"
+                        android:imeOptions="actionNext"
+                        android:inputType="text"
+                        android:background="@drawable/border"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/til_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/your_email"
+                    android:textColorHint="@color/gris_clair"
+                    app:errorEnabled="true">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tie_email"
+                        android:textColor="@color/gris_clair"
+                        android:layout_gravity="center"
+                        android:maxLines="1"
+                        android:textSize="20sp"
+                        android:padding="10dp"
+                        android:gravity="center_vertical"
+                        android:imeOptions="actionNext"
+                        android:inputType="text"
+                        android:background="@drawable/border"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/til_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/your_password"
+                    android:background="@android:color/transparent"
+                    android:textColorHint="@color/gris_clair"
+                    app:errorEnabled="true">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tie_password"
+                        android:drawableRight="@drawable/ic_baseline_check_30"
+                        android:drawableEnd="@drawable/ic_baseline_check_30"
+                        android:textColor="@color/gris_clair"
+                        android:layout_gravity="center"
+                        android:imeOptions="actionNext"
+                        android:inputType="textPassword"
+                        android:textSize="20sp"
+                        android:padding="10dp"
+                        android:background="@drawable/border"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLength="5"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/til_password_confirm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/your_password_confirm"
+                    android:background="@android:color/transparent"
+                    android:textColorHint="@color/gris_clair"
+                    app:errorEnabled="true">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tie_password_confirm"
+                        android:drawableRight="@drawable/ic_baseline_check_30"
+                        android:drawableEnd="@drawable/ic_baseline_check_30"
+                        android:textColor="@color/gris_clair"
+                        android:layout_gravity="center"
+                        android:imeOptions="actionDone"
+                        android:inputType="textPassword"
+                        android:textSize="20sp"
+                        android:padding="10dp"
+                        android:background="@drawable/border"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLength="5"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="60dp"
+                    android:layout_marginTop="20dp"
+                    android:textAlignment="center"
+                    android:layout_gravity="center"
+                    android:background="@drawable/rounded"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/btnlogin"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/bleu"
+                        android:padding="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:textSize="20sp"
+                        android:textStyle="normal"
+                        android:shadowDx="@android:integer/config_longAnimTime"
+                        android:background="@drawable/ic_baseline_trending_flat_64"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>
